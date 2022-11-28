@@ -5,5 +5,6 @@
   OptionalBraces.run()
   Union.run()
   Intersection.run()
+  TypeLambda.run()
 
 def msg = "I was compiled by Scala 3. :)"
