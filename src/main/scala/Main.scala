@@ -6,5 +6,6 @@
   Union.run()
   Intersection.run()
   TypeLambda.run()
+  DependentFunctionType.run()
 
 def msg = "I was compiled by Scala 3. :)"
