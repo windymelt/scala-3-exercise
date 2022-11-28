@@ -4,5 +4,6 @@
   println("https://dotty.epfl.ch/docs/reference/index.html を参考にScala 3の機能をなぞっていくぞい")
   OptionalBraces.run()
   Union.run()
+  Intersection.run()
 
 def msg = "I was compiled by Scala 3. :)"
