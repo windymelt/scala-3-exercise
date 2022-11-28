@@ -1,6 +1,6 @@
-/** Intersection types と Union typesについて
+/** Union typesについて
   */
-object InterUnion:
+object Union:
   type IS = Int | String // Union types
   val s: IS = "Union typesで型を合わせることができる。ISはIntかStringのどちらかである。"
   val i: IS = 42
