@@ -9,15 +9,15 @@ object Union:
     case i: Int    => println(s"$i は Int")
     case s: String => println(s"$s は String")
 
-  def checkShape(x: Box | Circle): Unit = x match
+  def area(x: Box | Circle): Double = x match
     // case classやenumによるUnion Typesの場合、exhaustive checkがかかる
-    case Box(l)    => println("box")
-    case Circle(r) => println("circle")
+    case Box(w, h) => w * h
+    case Circle(r) => Math.PI * (r * r)
 
   def run(): Unit =
     checkType(s)
     checkType(i)
-    checkShape(Box(42))
+    println(area(Box(42, 12)))
 
-case class Box(len: Double)
+case class Box(w: Double, h: Double)
 case class Circle(r: Double)
